@@ -1,7 +1,7 @@
 global:
   message: Welcome to order service prod enviornment!
 server:
-  port:8085
+  port: 8085
 message: Hello From Prod!
 spring:
   datasource:
