@@ -1,18 +1,13 @@
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    
-microservices:
-	payment-service:
-		endpoints:
-			endpoint:
-				uri: http://PAYMENT-SERVICE/payment/doPayment
-	order-service:
-		endpoints:
-			endpoint:
-				uri: http://ORDER-SERVICE/order/bookOrder
+global:
+  message: Welcome to global Microservice environment.
+logging:
+  level:
+    root: INFO
+management:
+  endpoints:
+    web:
+      exposure:
+        inculde: health, info, refresh
+  endpoint:
+    health:
+      show-details: always
